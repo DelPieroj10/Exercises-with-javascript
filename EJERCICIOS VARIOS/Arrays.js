@@ -1,0 +1,341 @@
+                //ARRAYS:
+              //----------    
+/*
+Monday
+Tuesday
+Wednesday 
+Thursday 
+Friday 
+Saturday 
+Sunday
+*/
+/*
+let numeros = [];
+
+console.log(numeros);
+*/
+
+//          ARRAYS UNIDIMENSIONALES:
+
+//var semana = new Array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
+
+//var semana = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", 58];
+
+//console.log(semana);
+//console.log(semana [3]);
+
+
+//          ARRAYS MULTIDIMENSIONALES (ANIDADOS):
+
+
+//var listaDeEstudiantes = [["Nora", 97], ["Gino", 78]];
+
+//console.log(listaDeEstudiantes);
+//console.log(listaDeEstudiantes[0] [1]);
+
+/*
+var dias =
+    [
+        7,
+        "7 days", 
+        ["Monday", "Tuesday"],
+        ["Wednesday",
+            ["24 horas"],
+            "Thursday"],
+        ["Friday", "Saturday"],
+        ["Sunday"],
+        58
+    ];
+*/
+//document.write(dias);
+
+//document.write(dias[2]);
+
+//document.write( dias[2][0] );
+
+//document.write( dias[6] );
+
+//document.write( dias[3][1] );
+
+
+//          MÉTODOS CON ARRAYS:
+
+/*
+    > length
+    > isArray ---> Devuelve "true" o "False" de una variable.
+    
+    > pop ---> Devuelve y Remueve el último elemento de un Array.
+    > shift ---> Devuelve y Remueve el primer elemento de un Arreglo.
+    
+    > push ---> Agrega elementos a un Array.
+    
+    > unshift ---> Agrega un elmento al inicio de una variable.
+    
+    > join --> Convierte un Array en un String normal y lo devuelve c/separador que indiquemos.
+    
+    > split --> Convierte un String normal en un Array.
+    
+    > array.from (map)--> Transforma un elemento del html para ser impreso en pantalla y ser visto a la mismo tiempo por consola.
+    
+    > sort ---> Ordena un Array de forma alfabética.
+    
+    > reverse ---> Ordena los elementos al contrario de su orden primario.
+    
+    > splice(a,b,items) ---> Cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos:
+        a.- Indice de inicio.
+        b.- Número de elementos. (opcional)
+        items.- Elementos a añadir en el caso de que se añadan. (opcional)
+
+    > slice ---> Extrae elementos de un Array dsd el índice (a) hasta el índice (b). Si no existe (b) lo dsd (a) hasta el final, si no existe ni (a) ni (b) hace una copia del original.
+    ---------------------------------------------------------------------------------
+    
+    > for in ---> Nos devuelve el Array en forma de índice
+    > forEach --> Nos devuelve el Array con su índice
+    > find ---> Busca y devuelve el elemento indicado en su primera aparición
+    > findIndex ---> Busca y devuelve el índice del elemento indicado
+    > filter ---> Busca y devuelve el elemento indicado tantas veces como aparezca
+    > some ---> Ubica y evalua  un parametro y devuelve un booleano
+*/
+
+
+//var numeros = [10, 20, 30, 40, 50];
+
+//document.write(numeros.length);
+
+//console.log(numeros);
+
+/*
+let estaciones = ["Invierno", "Otoño", "Primavera"];
+
+document.write(`La palabra "${estaciones[2]}" tiene ${estaciones[2].length} letras`);
+
+console.log(Array.isArray(estaciones));
+*/
+
+//--------------------------------------------------------------------------------
+/*
+var numeros = [10, 20, 30, 40, 50, "Lunes", "Shit!!"];
+
+//document.write(numeros.pop());  // ---> De esta forma Devuelve
+
+// numeros.pop();  // ---> De esta otra Remueve
+// console.log(numeros);
+*/
+
+// Devuelve y asigna el valor a otra variable:
+
+/*
+var estaciones;
+var estacion;
+
+estaciones = ["Invierno", "Otoño", "Primavera", "Verano"];
+
+estacion = estaciones.pop();
+
+console.log(estaciones);
+console.log(estacion);
+*/
+
+//--------------------------------------------------------------------------------
+
+
+// var estaciones = ["Invierno", "Otoño", "Primavera", "Verano"];
+/*
+estaciones.shift();
+
+console.log(estaciones);
+*/
+
+//      VARIABLE PARA CUANDO SE DESEA GUARDAR DE UNA VEZ UN ELEMENTO BORRADO DE UN  ARRAY E IMPRIMIRLO:
+
+//  Ejemplo: 
+    /*
+        let deleteElement = estaciones.shift(); 
+
+        console.log(deleteElement);
+    */    
+        //  NOTA: Para el caso de utlizar la variable "deleteElement", solo se imprimira el elemento eliminado. 
+
+//-------------------------------------------------------------------------------
+/*
+var estaciones = ["Invierno", "Otoño", "Primavera"];
+
+estaciones.push = ("Verano");
+
+console.log(estaciones);
+*/
+
+/*
+var números = [10, 20, 30, 40, 50];
+
+números.push(60);
+números.push(70);
+números.push(80);
+números.push(90);
+números.push(100);
+
+//console.log(numeros);
+*/
+
+// Otra manera seria, en caso de querer guardar las modificaciones porci toca usarlas después:
+/*
+let newLength = numeros.push(60, 70, 80, 90);
+
+console.log(numeros);
+console.log(newLength);
+*/
+
+//  unshift:
+/*
+var estaciones = ["Invierno ", "Otoño ", "Primavera ", "Verano "];
+
+estaciones.unshift ("Estaciones del Año: ");
+
+document.write(estaciones);
+*/
+
+//--------------------------------------------------------------------------------
+
+//  join (separados):
+/*
+var numeros = [10, 20, 30, 40, 50, "Lunes", "Shit!!"];
+
+console.log(numeros);
+console.log(numeros.join(" - "));
+*/
+// * Forma de comprobarlo:
+
+//      *Forma 1:
+/*
+numeros.join();
+
+document.write(typeof numeros);
+*/
+//      *Forma 2:
+
+//console.log(numeros.join());
+
+//-------------------------------------------------------
+/*
+var semana = "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday";
+
+//console.log( semana.split (" , ") );
+
+var semana2 = semana.split(" , ");
+
+console.log(semana2);
+*/
+//-------------------------------------------------------
+
+/*
+var semana = Array.from(document.querySelectorAll(".text p"));
+
+var creación = semana.map(text => text.textContent);
+
+console.log(creación);
+*/
+
+//--------------------------------------------------------
+
+//  sort / reverse
+
+/*
+var semana = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", 58];
+
+document.write(semana.sort());
+
+document.write(semana.reverse());
+*/
+
+//--------------------------------------------------------
+
+//  splice:
+
+//var numeros = [10, 20, 30, 40, 50, "Lunes", " Shit!!"];
+
+//document.write(numeros);
+//numeros.splice(5)   // Así Elimina dsd la posición indicada hasta el final.
+
+//numeros.splice(5,1) // Con 2 parametros elimina dsd la posición indicada y la cantidad que le pidamos.
+
+//numeros.splice(5, 1, " Domingo 10pm", " y yo sin sueño"); // De esta forma indicamos la posición inicial, la cantidad a eliminar y dsp  s del 3er parametro viene todo lo que se desea agregar.
+
+//document.write(numeros);
+
+//--------------------------------------------------------
+
+//  slice:
+
+//var semana = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", 58];
+/*
+let newSemana = semana.slice();
+console.log(semana);
+console.log(newSemana);
+*/
+/*
+let newSemana = semana.slice(3);
+console.log(semana);
+console.log(newSemana);
+*/
+/*
+let newSemana = semana.slice(3,5);
+console.log(semana);
+console.log(newSemana);
+*/
+
+//--------------------------------------------------------
+
+//var semana = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", 58, "Tuesday", "Thursday", 58, "Monday"];
+/*
+for (let i in semana) {
+    document.write(semana[i] + "<br>");
+};
+*/
+
+/*
+semana.forEach(
+    (dias, i) => document.write(`${i} - ${dias} <br>`)
+
+);
+*/
+
+/*
+var buscar = semana.find (dia => dia == "Tuesday");
+
+document.write(buscar);
+*/
+
+/*
+var buscar = semana.findIndex (dia => dia == "Friday");
+
+document.write(buscar);
+*/
+
+/*
+var buscar = semana.filter (dia => dia == "Thursday");
+
+document.write(buscar);
+*/
+//---------------------------------------------------------------
+
+/*
+var numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+var buscar = numeros.some (dos => dos < 50);
+
+console.log(buscar);
+*/
+
+//      ACCEDER Y SUSTITUIR ELEMENTOS EN UN ARRAY
+//     --------------------------------------------
+/*
+var miArreglo = [10, 20, 30];
+
+miArreglo[0] = 15.3;
+miArreglo[1] = "Prosopopeya";
+miArreglo[2] = [32, 34, 36];
+
+console.log(miArreglo);
+*/
+
+

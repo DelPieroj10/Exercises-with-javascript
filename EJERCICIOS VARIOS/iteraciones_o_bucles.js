@@ -1,0 +1,281 @@
+//ITERACIONES, CICLOS O BUCLES:
+
+/*
+    While
+    do-while
+    for
+    break-continue
+*/
+
+//  while:
+// ........
+
+/*
+var uno = 10;
+
+while (uno <= 20) {
+    document.write(uno + "<br>");
+    uno++;
+}
+*/
+
+/*
+var uno = 40;
+
+while (uno >= 20) {
+    document.write(uno + "<br>");
+    uno--;
+}
+*/
+
+/*
+var i = 0;
+
+while (i <= 19) {
+    console.log("Pushing me away!!");
+    i++;
+}
+*/
+
+/*
+var miArreglo = [];
+var i = 0;
+
+console.log(miArreglo);
+
+while (i <= 10) {
+    miArreglo.push(i);
+    i++;
+}
+console.log(miArreglo);
+*/
+
+/*
+var numeros = [2, 3, 4, 5, 6, 8, 9, 34];
+
+while (numeros.length > 5) {
+    numeros.pop();
+}
+console.log(numeros);
+*/
+
+//      DO...WHILE:
+//     ............
+
+/*
+var uno = 20;
+
+do {
+    document.write(uno + "<br>");
+    uno--;
+} while (uno >= 20);
+*/
+
+
+//  for:
+// ......
+
+/*
+for (var i = 1; i <= 10; i++) {
+    document.write(i + "<br>");
+};
+*/
+
+/*
+var miArreglo = [];
+
+for (var i = 0; i < 10; i++) {
+    miArreglo.push(i);
+}
+console.log(miArreglo);
+*/
+
+
+// Bucle "for" para obtener números pares:
+
+//var miArreglo = [];
+
+//for (var i = 0; i < 20; i = i + 2) {
+/*Esta sgte forma es lo mísmo que la de arriba pero resumida:*/
+/*for (var i = 0; i < 26; i += 2) {    
+    miArreglo.push(i);
+}
+console.log(miArreglo);
+*/
+
+// Bucle "for" para obtener números impares:
+/*
+var miArreglo = [];
+
+for (var i = 1; i < 20; i += 2) {    
+    miArreglo.push(i);
+}
+console.log(miArreglo);
+*/
+
+/*
+let numbers = [56, 14, 23, 37, 41, 59]
+
+for (let i = 0; i < numbers.length; i++) {
+    console.log(`i vale ${i} y el valor de esa posición en el array es ${numbers[i]}`);
+}
+*/
+
+//Bucle "for" para contar en reversa:
+/*
+for (var i = 15; i >= 5; i--) {
+    console.log(i);
+}
+*/
+
+//      BUCLE FOR OF / FOR IN:
+//      ......................
+
+//  bucle "for of":
+/*
+let names = ['Paco', 'José', 'Paula', 'María''Raul', 'Sonia']
+
+for (let name of names) {
+    console.log(name);
+}
+*/
+
+//  bucle "for in":
+/*
+let names = ['Paco', 'José', 'Paula', 'María', 'Raul', 'Sonia']
+
+for (let index in names) {
+    console.log(index);
+}
+*/
+
+//  Ciclos "for" anidados:
+
+/*
+var miArreglo = [[1, 2, 3,], [4, 5, 6], [7, 8, 9]];
+
+for (var i = 0; i < miArreglo.length; i++) {
+    console.log("> Nueva iteración");
+    var arregloAnidado = miArreglo[i];  //Arreglo
+    console.log("Arreglo: " + arregloAnidado);
+
+    for (var j = 0; j < arregloAnidado.length; j++) {
+        console.log(">>> Ciclo anidado ")
+        console.log("Elemento:")
+        console.log(arregloAnidado[j]);  //Elemento
+    }
+}
+*/
+
+//  BREAK-CONTINUE:
+// .................
+
+        //break:
+    //  .........
+/*
+for (var i = 1; i <= 20; i++) {
+    if (i == 5) { break;}
+
+    document.write(i + "<br>");
+};
+*/
+
+/*
+let names = ['Paco', 'José', 'Paula', 'María', 'Raul', 'Sonia']
+
+for (let i = 1; i < names.length; i++) {
+    if (names[i] === 'Sonia') {
+        break
+    }
+    console.log(names[i]);
+}
+*/
+
+        //continue:
+    //  ...........
+/*
+for (var i = 1; i <= 20; i++) {
+    if (i == 5 || i == 7) { continue;}
+    
+    document.write(i + "<br>");
+};
+*/
+
+/*
+for (var i = 1; i <= 20; i++) {
+    if (i >= 5 && i <= 10) { continue;}
+    
+    document.write(i + "<br>");
+};
+*/
+
+/*
+let names = ['Paco', 'José', 'Paula', 'María', 'Raul', 'Sonia']
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i] === 'Paula') {
+        continue
+    }
+    console.log(names[i]);
+}
+*/
+
+
+//  EJEMPLO COMPUESTO:
+
+/*
+let names = ['Paco', 'José', 'Paula', 'María', 'Raul', 'Sonia']
+
+for (let name of names) {
+    if (name === 'Paula') {
+        continue
+    }
+    console.log(name);
+}
+
+for (let index in names) {
+    if (names[index] === 'Paula') {
+        continue
+    }
+    console.log(index);
+}
+*/
+
+//  ITERAR SOBRE UN ARREGLO:
+
+/*
+var miArreglo = [4, 6, 8, 2];
+var total = 0;
+
+for (var i = 0; i < miArreglo.length; i++) {
+    console.log("Iteración " + i);
+    console.log(miArreglo[i]);
+    total += miArreglo[i];
+}
+
+console.log(total);
+*/
+
+/*
+var lenguajes = ["JavaScript", "Python", "Java", "Swift"];
+
+for (var i = 0; i < lenguajes.length; i++) {
+    console.log(lenguajes[i].toUpperCase());
+}
+*/
+
+/*
+function contarNumerosPares(arreglo) {
+    var total = 0;
+
+    for (var i = 0; i < arreglo.length; i++) {
+        if (arreglo[i] % 2 == 0) {
+            total++;
+        }
+    }
+    return total;
+}
+
+console.log(contarNumerosPares([5, 2, 7, 3, 14, 17, 8, 6, 20, 15]));
+*/
+

@@ -1,0 +1,195 @@
+//CONDICIONALES:
+
+/*
+    if
+    if - else
+    if - else if - else
+    switch
+*/
+
+//  if:
+
+/*
+var x = 5;
+
+if (x > 2) {
+    console.log("La condición es verdadera");
+}
+*/
+
+/*
+var x = 5;
+
+if (x > 2 && x < 10) {
+    console.log("La condición es verdadera");
+}
+*/
+
+/*
+var estacion = "Verano";
+
+if (estacion == "Invierno") {
+    console.log("Yeah! I like winter quite more");
+}
+
+//si la condicion es falsa...
+
+console.log("As that someone like summer more...");
+*/
+
+//var uno = 30;
+//var dos = 50;
+
+/*    
+if (uno == dos) {
+    document.write("ES IGUAL");
+};
+*/
+
+/*
+if (uno != dos) {
+    document.write("ES DIFERENTE");
+};
+*/
+
+/*
+if (uno == 30) {
+    document.write("ES IGUAL");
+};
+*/
+
+//  if - else:
+
+//var uno = 30;
+//var dos = 50;
+
+/*
+if (uno == 35) {
+    document.write("ES IGUAL");
+} else {
+    document.write("ES DIFERENTE");
+};
+*/
+
+/*
+if (uno == 30 || uno == "number") {
+    document.write("ES IGUAL");
+} else {
+    document.write("ES DIFERENTE");
+};
+*/
+
+/*
+var estacion = "Verano";
+
+if (estacion === "Invierno") {
+    console.log("Winter has begun! We can dust off the coats")
+} else {
+    console.log("I already want winter to come to play in the snow")
+};
+*/
+
+
+//  if - else if - else:
+
+/*
+function clasificarValor(valor) {
+    if (valor % 2 == 0) {
+        console.log("Divisible entre 2.");
+    } else if (valor % 3 == 0) {
+        console.log("Divisible entre 3.");
+    } else {
+        console.log("No es divisible entre las opciones presentadas.");
+    }
+}
+
+clasificarValor(9);
+*/
+
+/*
+var uno = 30;
+
+if (uno == 10 ) {
+    document.write("PUBERTAD");
+} else if (uno == 20) {
+    document.write("FIN DE LA ADOLESCENCIA");
+} else if (uno == 30) {
+    document.write("CRISIS EXISTENCIAL");
+} else if (uno == 40) {
+    document.write("CUARENTENA");
+} else {
+    document.write("SE FUE TODO AL CARAJO");
+}
+*/
+
+/*
+function interpretarIMC(indiceDeMasaCorporal) {
+    if (indiceDeMasaCorporal < 18.5) {
+        console.log("Bajo Peso");
+    } else if (indiceDeMasaCorporal <= 24.9) {
+        console.log("Normal");
+    } else if (indiceDeMasaCorporal <= 29.9) {
+        console.log("SobrePeso");
+    } else {
+        console.log("Co-Morbilidad de peso");
+    }    
+}
+
+    interpretarIMC(30.1);
+*/
+
+
+//  switch:
+
+    //SENTENCIA SWITCH / OPCIÓN PREDETERMINADA:
+/*
+var uno = 5;
+var dos;
+
+switch (uno) {
+    case 0: dos = "es CERO"; break;
+    case 1: dos = "es UNO"; break;
+    case 2: dos = "es DOS"; break;
+    case 3: dos = "es TRES"; break;
+    case 4: dos = "es CUATRO"; break;
+    case 5: dos = "es CINCO"; break;
+    default: dos = "VALIO MADRE"; break;
+}
+console.log(dos);
+*/
+
+
+    //SENTENCIA SWITCH / CASO SIMPLE:
+/*
+function clasificadorValor(valor) {
+    var respuesta;
+    switch (valor) {
+        case 1: respuesta = "Alpha"; break;
+        case 2: respuesta = "Beta"; break;
+        case 3: respuesta = "Gamma"; break;
+        case 4: respuesta = "Delta"; break;
+    }
+    return respuesta;
+}
+
+console.log(clasificadorValor(4));
+*/
+
+
+    //SENTENCIA SWITCH / MULTIPLES CASOS:
+/*
+function clasificarVolumen(valor) {
+    var volumen;
+    switch (valor) {
+        case 1: volumen = "bajo"; break;
+        case 2:
+        case 3: volumen = "intermedio"; break;
+        case 4: 
+        case 5: 
+        case 6: volumen = "alto"; break;
+    }
+    return volumen;
+}
+document.write(clasificarVolumen(3));
+*/
+// NOTA: En este último tipo de "SENTENCIA SWITCH / MULTIPLES CASOS" por algun problema que desconosco hasta el momento (como en uno de los casos de op.ternarios), este tipo de construcción no se ejecuta, solo se lanza un error; cosa que en la clase aparece que funciona sin ningun problema. 
