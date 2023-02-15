@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background-color: #04266b;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.permissions {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: orange;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 2px rgb(29, 26, 26);
+    cursor: pointer;
+}

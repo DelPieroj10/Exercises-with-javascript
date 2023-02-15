@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-color: #2f3238;
+    font-family: sans-serif;
+    color: #222;
+    user-select: none;
+}
+
+.drop-zone {
+    width: 80%;
+    margin: 1rem auto;
+    height: 300px;
+    background-color: #838383;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    border: 5px dashed #caced6;
+}
+
+.drop-zone--active {
+    border: 5px solid #caced6;
+    background-color: #414141;
+    color: #caced6;
+}
+
+.form {
+    width: 100%;
+    text-align: center;
+}
+
+.form-button {
+    background: orange;
+    border: none;
+    width: 90px;
+    height: 30px;
+    padding: 0.2rem 0.8rem;
+    border-radius: 15px;
+    color: #414141;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+.hide {
+    display: none;
+}

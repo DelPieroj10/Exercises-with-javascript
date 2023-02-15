@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API IndexedDB IV</title>
+    <link rel="stylesheet" href="../API's/API IndexedDB-IV.css">
+</head>
+
+<body>
+    <form id="form" class="form">
+        <label for="task">Task</label>
+        <input type="text" name="task">
+        <select name="priority">
+            <option value="low">Low</option>
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+        </select>
+        <button class="button" name="button" data-action="add">Add Task</button>
+        <!-- Uno de los cambios realizados es el de agregar el atributo "name" para poder localizarlo desde el "form", y el atributo personalizado "data-action" para pasar valores.  -->
+    </form>
+    <div id="tasks" class="tasks"></div>
+
+    <script src="../API's/API IndexedDB-IV.js"></script>
+</body>
+
+</html>

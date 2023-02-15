@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-color: crimson;
+    font-family: sans-serif;
+    color: #ccc;
+    user-select: none;
+}
+
+.form {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.button {
+    background: rgb(8, 95, 110);
+    border: none;
+    padding: 0.2rem 0.8rem;
+    border-radius: 15px;
+    color: #ccc;
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.tasks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(18, 110, 110);
+    border: 2px solid rgb(96, 207, 207)
+}

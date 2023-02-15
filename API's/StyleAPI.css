@@ -1,0 +1,174 @@
+/* API Web Storage */
+/*
+.form {
+    margin-bottom: 1rem;
+}
+
+.form_field {
+    display: flex;
+    justify-content:space-between;
+    width: 230px;
+    margin-bottom: 1rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info p {
+    margin: 0 1rem;
+}
+*/
+
+/* API Drag & Drop */
+/*
+body { 
+    background: orange;
+}
+
+.idea {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    margin-bottom: 2rem;
+}
+
+.drop-zone {
+    display: grid;
+    height: 350px;
+    width: 600px;
+    position: relative;
+    text-align: center;
+    grid-template-columns: 300px 1fr 530px;
+    grid-template-rows: 1 fr;
+    background: royalblue;
+    padding: 150px;
+    font-size: larger;
+}
+*/
+
+/* API Drag & Drop II*/
+/*
+body {
+    margin: 0;
+    background-color: #ec407a;
+    font-family: sans-serif;
+    color: azure;
+    user-select: none;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: 2px solid orange;
+}
+
+.container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.title {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+    background-color: #7e57c2;
+}
+
+.tasks {
+    width: 30%;
+    text-align: center;
+    background: orange;
+    border: 1px solid black;
+    min-height: 130px;
+    padding-bottom: .5rem;
+}
+
+.tasks:first-child {
+    margin-right: 1rem;
+}
+
+.active {
+    background-color: aqua;
+    color: black;
+}
+*/
+
+
+/* API File. */
+/*
+body {
+    margin: 0;
+    background-color: darkturquoise;
+    font-family: sans-serif;
+    color: azure;
+    user-select: none;
+}
+
+img {
+    max-width: 100%;
+}
+*/
+
+/* API File II */
+
+:root {
+    --bar-width: 0%:
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: sans-serif;
+    color: azure;
+    user-select: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.Load-bar, .Load-bar1 {
+    width: 50%;
+    background-color: #ccc;
+    height: 7%;
+    position: absolute;
+    margin: 2rem 0;
+}
+
+.Load-bar1 {
+    margin: 7rem 0;
+}
+
+.Load-bar1::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: royalblue;
+    width: var(--bar-width);
+    height: 100%;
+}
+.Load-bar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: royalblue;
+    width: var(--bar-width);
+    height: 100%;
+}
+
+.progress {
+    display: block;
+    background-color: royalblue;
+    height: 100%;
+    width: 0;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API file + Drag & Drop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="../API's/APIfile+DragandDrop.css">
+</head>
+<body>
+    <form class="form" method="post" enctype="multipart/form-data">
+        <div>
+            <input class="hide" type="file" name="file" id="file" multiple >
+
+            <div id="drop-zone" class="drop-zone">
+                <i class="fas fa-file-upload"></i>
+                <p class="drop-zone_text">
+                    Drop file or click to upload file
+                </p>
+            </div>
+            <input type="submit" id="upload-button" class="form-button" value="Upload">
+        </div>
+    </form>
+
+    <script src="../API's/APIfile+DragandDrop.js"></script>
+    
+</body>
+</html>
