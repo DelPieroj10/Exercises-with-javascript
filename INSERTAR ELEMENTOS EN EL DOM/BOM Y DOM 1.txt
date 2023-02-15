@@ -1,0 +1,314 @@
+//  	BOM (Browser Object Model) Y DOM (Document Object Model):
+//    -----------------------------------------------------------
+
+
+
+/*  Dato: Al colocar "$0" en la consola del navegador podemos acceder y seleccionar el elemento que tenemos de html, y si colocas un punto despues podras desplegar otra cantidad de opciones que podrás utlizar para selecciona el elemento al cual quieres acceder. 
+Ejem: $0.style, $0.type, $0.id
+
+Otros que también se pueden utilizar son:
+- $0.nodeType
+- $0.nodeName
+- $0.childNodes[0].nodeType
+
+*/
+
+/*
+window.name = "CLASE DE BOM Y DOM";
+
+var dato = "El nombre es: " + window.name + "<br>";
+var ancho = "El ancho es: " + window.outerWidth + "<br>";
+var alto = "El alto es: " + window.outerHeight +"<br>";
+var anchoInterno = "El ancho interno es: " + window.innerWidth +"<br>";
+var altoInterno = "El alto interno es: " + window.innerHeight +"<br>";
+var scrollHorizontal = "El Scroll Horizontal es: " + window.pageXOffset +"<br>";
+var scrollVertical = "El Scroll Vertical es: " + window.pageYOffset +"<br>";
+var distanciaIzquierda = "La distancia desde la Izquierda es: " + window.screenX +"<br>";
+var distanciaTop = "La distancia Arriba es: " + window.screenY +"<br>";
+
+
+document.write(dato, ancho, alto, anchoInterno, altoInterno, scrollHorizontal, scrollVertical, distanciaIzquierda, distanciaTop);
+*/
+
+
+// window.alert ("How you doing");
+
+// --------------------------------------------------------------------------------------------------------
+
+//  METÓDOS DE WINDOWS EN EL BOM:
+// -------------------------------
+/*
+function visitar(){
+    ventana = window.open("ayuda.html", "_blanck", "width=500", "height=300");
+};
+
+function cerrar(){
+    ventana.close();
+};
+
+function dimensionar(){
+    ventana.resizeBy(100, 100);
+};
+
+function dimensionarTo(){
+    ventana.resizeTo(500, 500);
+};
+
+function moving(){
+    ventana.moveBy(500, 500);
+};
+
+function movingTo(){
+    ventana.moveTo(500, 100);
+};
+
+function enfocar(){ // Para este boton no importa cuentas ventanas tengas abierta, si el boton esta activo traera la ventana poseedora a primer lugar.
+    ventana.focus();
+};
+
+function imprimir(){
+    ventana.print();
+};
+*/
+
+//  iframe:
+/*
+window.name = "CLASE SOBRE BOM";
+
+alert(window.length);
+alert(window.name);
+alert(window.self);
+alert(window.parent);
+alert(window.outerWidth); //...
+
+// NOTA: Aparentemente este objeto (iframe) esta descontinuado.
+*/
+
+/*
+//  history:
+
+var historial = window.history;
+console.log(historial);
+
+//  location:
+
+var localizacion = window.location;
+document.write(localizacion);
+
+//  navigator:
+
+var navegador = window.navigator.vendor;
+document.write(navegador);
+
+var navegador = window.navigator;
+console.log(navegador);
+
+//  screen:
+
+var pantalla = window.screen;
+console.log(pantalla);
+*/
+
+//   METÓDOS DE DOCUMENTO EN EL DOM:
+// -----------------------------------
+
+//  querySelector:
+// ----------------
+
+/*
+document | element .querySelector('selectorCSS') - Accede al primer elemento que coincida con el selector CSS.
+
+document | element .querySelectorAll('selectorCSS') - Accede a todos los elementos que coincidan con el selector CSS, devuelve un nodeList
+*/
+
+/*
+var a = document.querySelector(".primero");
+//var a = document.querySelector("#dos");
+var a = document.querySelector("#todito");
+
+a.style.color = "green";
+
+var a = document.querySelector(".ultima h1");
+a.style.color = "orange";
+
+var a = document.querySelector("a[class='vinculo']");
+a.style.color = "gray";
+
+var a = document.querySelectorAll("p")[0];
+a.style.color = "magenta";
+*/
+
+//  getElements / getElementById:
+// ------------------------------
+
+/*
+var b = document.getElementById("uno");
+b.style.color = "red";
+*/
+
+/*
+var b = document.getElementsByClassName("primero")[2];
+b.style.color = "red";
+*/
+
+/*
+var b = document.getElementsByClassName("primero")[0];
+b.style.color = "gray";
+b.style.border = "1px solid orange";
+b.style.fontFamily = "Helvetica";
+b.style.padding = "7px 30px";
+
+b.className = b.className.replace("primero", "principal")
+
+
+var b = document.getElementsByTagName("p")[1];
+b.style.color = "purple";
+b.innerHTML = ["You're such an inspiration for the ways <br> That I'll never ever choose to be <br> Oh so many ways for me to show you <br> How your savior has abandoned you <br> Fuck your God <br> Your Lord and your Christ <br> He did this <br> Took all you had and <br> Left you this way <br> Still you pray, you never stray <br> Never taste of the fruit <br> You never thought to question why <br> It's not like you killed someone <br> It's not like you drove a hateful spear into his side <br>  Praise the one who left you <br> Broken down and paralyzed <br> He did it all for you <br> He did it all for you <br> Oh so many many ways for me to show you <br> How your dogma has abandoned you <br> Pray to your Christ, to your god <br> Never taste of the fruit <br> Never stray, never break <br> Never choke on a lie <br> Even though he's the one who did this to you <br> You never thought to question why <br> Not like you killed someone <br> It's not like you drove a spiteful spear into his side  Talk to Jesus Christ <br> As if he knows the reasons why <br> He did it all for you <br> Did it all for you <br> He did it all for you <br>"] ;
+b.innerHTML += "<p> Compositores: Billy Howerdel / Maynard Keenan <br> Letra de Judith © BMG Rights Management, Universal Music Publishing Group</p>"; 
+
+var b = document.getElementsByTagName("h1")[2];
+b.style.color = "royalblue";
+b.innerHTML = "Judith";
+b.innerHTML += " by Perfect Circle";
+*/
+
+/*
+var a = document.getElementById("todito");
+
+function fondo(color){
+    if(color == "rojo"){
+        a.style.backgroundColor = "crimson";
+        a.style.color = "orange";
+    }else if (color == "verde"){
+        a.style.backgroundColor = "green";
+        a.style.color = "white";
+    }else if (color == "azul"){
+        a.style.backgroundColor = "royalblue";
+        a.style.color = "orange";
+    }else{}
+}
+*/
+
+//      DOM - Modificar atributos y clases
+//  ---------------------------------------------
+
+/*
+Atributos.
+    element.getAttribute('attribute')
+    element.setAttribute('attribute', 'value') -> Le asigna valor al atributo.
+
+Clases.
+    element.classList.add('class','class',...)    
+    element.classList.remove('class','class',...)    
+    element.classList.contains('class')    
+    element.classList.replace('oldclass', newClass)
+    
+    element.classList.toggle('class'[,force])
+    
+Atributos directos
+    id
+    value
+*/
+
+
+const title = document.getElementById('title')
+const name = document.getElementById('name')
+
+// console.log(name.getAttribute('type'));
+
+// name.setAttribute('type', 'number')
+
+title.classList.add('main_title', 'other-title')
+name.classList.add('main_name', 'other-name')
+name.classList.remove('other-name')
+//title.classList.remove('title')
+
+if (title.classList.contains('title')) console.log('Title tiene la clase [title]')
+else console.log('Title NO tiene la clase [title]')
+
+title.classList.replace('title', 'first-title')
+
+console.log(title)
+console.log(name)
+
+
+//      ACCEDIENDO A LOS ELEMENTOS EN EL DOM:
+//  ---------------------------------------------
+
+/*
+const first_title = document.getElementById("first_title")
+
+console.log(first_title);
+
+first_title.textContent = 'DOM - Accediendo a nodos'
+
+
+const paragraph = document.querySelector('.paragraph')
+
+console.log(paragraph);
+*/
+
+/*
+const paragraph = document.querySelector('.paragraph')
+
+const span = paragraph.querySelector("span")
+
+console.log(span);
+console.log(span.textContent);
+*/
+
+/*
+const paragraph = document.querySelector('.paragraph')
+
+const span = document.getElementById('second_title').querySelector("span")
+
+console.log(span.textContent);
+*/
+
+/*
+const paragraphs = document.querySelectorAll('.paragraph')
+
+console.log(paragraphs);
+*/
+
+// Para verificar ue no es un Array y colocar estilo (se recomienda no colocar estilos dsd javascript, al menos que sea una situación que realmente lo amerite):
+
+/*
+const paragraphs = document.querySelectorAll('.paragraph')
+
+paragraphs[0].style.color = 'red' // Para dar style
+
+paragraphs.map(p=>p.style.color='green') // Para verificar que no es un array. Nos da la prueba de que un nodeList no es un array.
+
+console.log(paragraphs);
+*/
+
+
+// Como utilizar un ".map" cuando hay un "querySelector".
+
+/*
+const paragraphs = document.querySelectorAll('.paragraph')
+
+const paragraphsSpread = [...document.querySelectorAll('.paragraph')]
+const paragraphsArray = document.querySelectorAll('.paragraph')
+
+paragraphs[0].style.color = 'red' 
+
+paragraphsSpread.map(p=>p.style.color='green') 
+
+console.log(paragraphs);
+*/
+
+
+//...Otra manera para tratarlo como un array seria (para los casos en que el navegador no soporte "Spread")
+
+/*
+const paragraphs = document.querySelectorAll('.paragraph')
+
+const paragraphsArray = Array.from(document.querySelectorAll('.paragraph'))
+
+paragraphs[0].style.color = 'red'
+
+paragraphsArray.map(p=>p.style.color='royalblue')
+*/
+
